@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/home/morris/workspace/demo_ap/hf_device_api/build_ralink'
+let g:netrw_dirhist_2='/home/morris/workspace/source/FSL_USB_Linux_driver'
+let g:netrw_dirhist_3='/home/morris/workspace/source/temp7/hf_device_api/build_ralink'
+let g:netrw_dirhist_4='/home/morris/workspace/source/hf_device_api/build_ralink'
+let g:netrw_dirhist_5='/home/morris/workspace/source/Afa9035Philips18271/driver'
+let g:netrw_dirhist_6='/home/morris/workspace/source/hf_device_api/build_ralink'
+let g:netrw_dirhist_7='/home/morris/workspace/source/A867/a867_drv_v1.0.28'
+let g:netrw_dirhist_8='/home/morris/.vim/bundle/nerdtree'
+let g:netrw_dirhist_9='/home/morris/.vim'
