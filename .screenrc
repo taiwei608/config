@@ -1,15 +1,32 @@
-# 設定每個視窗的標題
-caption always "%{= wk} %{= KY} [%n]%t @ %H %{-} %= %{= KR} %l %{-} | %{= KG} %Y-%m-%d %{-} "
+# Start message
+startup_message off
 
-# 設定總是顯示 screen 的狀態列
-hardstatus alwayslastline " %-Lw%{= Bw}%n%f %t%{-}%+Lw %=| %0c:%s "
+# Set hardstatus always on
+#hardstatus alwayslastline " %-Lw%{= Bw}%n%f %t%{-}%+Lw"
+hardstatus alwayslastline
+hardstatus string " %-Lw%{= Bw}%n%f %t%{-}%+Lw"
 
-# next and prev screen
+# Autodetach session on hangup instead of terminating screen completely
+#autodetach on
+# Refresh the display when exiting programs
+altscreen on
+
+# Dynamic title
+shelltitle "$ |bash"
+#shelltitle '> |bash'
+
+# Disable vbell
+vbell off
+
+# screen buffer
+defscrollback 30000
+termcapinfo xterm ti@:te@
+
 bindkey "^[." next
 bindkey "^[," prev
 
-#turn of the start message
-startup_message off
-
-#clean screen after vim
-altscreen on
+#title "$basename"
+#windowlist string "%+3| $HPWD"
+#windowlist string "%+3| %t pwd: $PS2"
+windowlist string "%03n: %h %=%f"
+#windows
