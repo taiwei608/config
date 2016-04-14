@@ -74,6 +74,9 @@ map cn <esc>:cn<cr>
 map cp <esc>:cp<cr>
 map gc <esc>:ccl<cr>)
 
+"AutoComplPop
+highlight PmenuSel term=reverse ctermbg=white ctermfg=black
+
 "Remember the line I was on
 au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif
 
